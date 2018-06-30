@@ -25,7 +25,7 @@ SECRET_KEY = '0zmd*(syvd@2ex_6zk(kblw17z=bjsf2v*d6zm8p%ohipqs*3-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['py-test-muyleche.c9users.io']
 
 
 # Application definition
@@ -75,8 +75,8 @@ WSGI_APPLICATION = 'snafoo.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.path.join(BASE_DIR, 'snafoo_db'),
     }
 }
 
